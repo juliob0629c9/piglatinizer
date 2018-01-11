@@ -5,11 +5,33 @@
 // CREATE THE FUNCTIONS BELOW
 
 // Document Ready Function. All of your jQuery should go in here. 
-$( document ).ready(function() {
-  
+$(document).ready(function() {
+	function consonant (word) {
+		var array = word.split('');
+		var firstLetter = array[0];
+		
+		
+		array.splice(0,1); //Remove First Letter
+		console.log (array);
+		console.log (firstLetter);
+		array.push(firstLetter); //First letter to end.
+		console.log (array);
+		array.push("a"); //puts a at end
+		array.push("y"); // puts y at end 
+		console.log(array);
+		return array.join(""); //joins array with empty space
+	}
+  	function vowel (word){
+  	return word + 'yay';
+  		
+  	}
 
 
-
+	
+  $(".submit").click (function(){
+  	var thing= $(".input").val();
+	$(".result").text(vowel(thing));
+	
 });
 
 
@@ -25,3 +47,4 @@ $( document ).ready(function() {
 	//It should return a transfromed sentance
 
 
+});
