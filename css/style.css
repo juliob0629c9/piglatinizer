@@ -4,3 +4,15 @@ h1{
 div{
    text-align: center;
 }
+body{
+    background-image:url(http://3.bp.blogspot.com/-VYeQHVdoQjs/VFVFvtbghHI/AAAAAAAAFME/qYgwmJRtqrY/s1600/MinecraftPigFace.png);
+}
+.result{
+    font-size: 30px;
+    color:white;
+    font-family:cursive;
+}
+h1{
+    color:white;
+    font-family:cursive;
+}
